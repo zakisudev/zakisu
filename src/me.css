@@ -27,9 +27,13 @@
 }
 
 .toggle-checkbox:checked + .toggle-label {
-  background-color: #007bff; /* Color for the toggle when checked */
+  background-color: #007bff;
 }
 
 .toggle-checkbox:checked + .toggle-label .toggle-inner {
-  margin-left: 20px; /* Move the inner toggle to the right when checked */
+  margin-left: 20px;
+}
+
+.experience {
+  line-height: 1.7;
 }

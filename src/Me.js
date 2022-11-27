@@ -1,5 +1,33 @@
 import React, { useState, useEffect } from 'react';
-import { proPic, todoUrl, quranUrl, hahuUrl } from './vars.js';
+import {
+  IntroToJs,
+  proPic,
+  todoUrl,
+  quranUrl,
+  hahuUrl,
+  wrUrl,
+  allUrl,
+  snakeUrl,
+  ytLink,
+  gitLink,
+  tweetLink,
+  lnkdLink,
+  resumeLink,
+  comPose,
+  todoSource,
+  quranSource,
+  hahuSource,
+  writeSource,
+  trSource,
+  degSource,
+  corSource,
+  CodeFound,
+  WebDev,
+  JsInter,
+  vanUrl,
+  PythonInt,
+  IntroPython,
+} from './vars.js';
 import './index.css';
 import './me.css';
 
@@ -15,19 +43,25 @@ function Me() {
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
   }, [theme]);
+  function toggleView() {
+    const viewBtn = document.querySelector('.viewBtn');
+    const hide = document.querySelectorAll('.hide');
+    viewBtn.addEventListener('click', () => {
+      hide.forEach((item) => {
+        if (item.style.display === 'none') {
+          item.style.display = 'block';
+          viewBtn.innerHTML = 'View less...';
+        } else {
+          item.style.display = 'none';
+          viewBtn.innerHTML = 'View more...';
+        }
+      });
+    });
+  }
 
-  const ytLink = 'https://www.youtube.com/channel/UCPR3tI0avH_3oNMaJNb88Mw';
-  const gitLink = 'https://www.github.com/zakisu250';
-  const tweetLink = 'https://www.twitter.com/zakisu';
-  const resumeLink =
-    'https://drive.google.com/file/d/1GrrXUzbDpH4HZXSloYK7aTMz8vQBNa7e/view?usp=drive_link';
-  const comPose = 'https://mail.google.com/mail/u/0/#inbox?compose=new';
-
-  const todoSource = 'https://github.com/zakisu250/To-do';
-  const quranSource = 'https://github.com/zakisu250/Random-Quran-Verse';
-  const hahuSource = 'https://github.com/zakisu250/HAHU';
   return (
     <div id="page-wrapper">
+      <br />
       <div id="mode" className="toggle-switch">
         <input
           type="checkbox"
@@ -47,12 +81,19 @@ function Me() {
           <header className="resume-header">
             <h1>Zekaria Mohammed</h1>
             <p>
-              Software Developer, currently pursuing my Software Engineering
-              Certificate @ALX
+              Software Developer, currently pursuing my Software Engineering and
+              AWS Cloud Computing Certificate{' '}
+              <a
+                href="https://www.alxafrica.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                @ALX
+              </a>
             </p>
             <p>
-              <a href={comPose} _blank>
-                ▶ zakisu250@gmail.com
+              <a href={comPose} target="_blank" rel="noreferrer">
+                ▶ zakisudev@gmail.com
               </a>
             </p>
           </header>
@@ -61,74 +102,223 @@ function Me() {
       <section id="section-page" className="social-links">
         <ul className="social-links">
           <li>
-            <a href={ytLink} target="_blank" rel="noreferrer">
-              YouTube
+            <a href={gitLink} target="_blank" rel="noreferrer">
+              <i className="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href={lnkdLink} target="_blank" rel="noreferrer">
+              <i className="fa-brands fa-linkedin"></i>
             </a>
           </li>
           <li>
             <a href={tweetLink} target="_blank" rel="noreferrer">
-              Twitter
+              <i className="fa-brands fa-twitter"></i>
             </a>
           </li>
           <li>
-            <a href={gitLink} target="_blank" rel="noreferrer">
-              Github
+            <a href={ytLink} target="_blank" rel="noreferrer">
+              <i className="fa-brands fa-youtube"></i>
             </a>
           </li>
           <li>
             <a href={resumeLink} target="_blank" rel="noreferrer">
-              Download Resume
+              Resume
             </a>
           </li>
         </ul>
       </section>
       <section id="section-page" className="education">
         <h2>Education</h2>
-        <p>❖ BSc in Civil Engineering - Wollo University - (2010 - 2014)</p>
-        <p>❖ Software Engineering - ALX - (2023 - Present)</p>
-      </section>
-      <section id="section-page" className="Experience">
-        <h2>Experience</h2>
+        <br />
         <p>
-          ❖ Fantahun Getnet General Contractor - Technical Manager
-          <p className="desc-exp">
-            - Worked as a Technical Manager at different sites. (2017 - 2021)
-          </p>
+          ❖ BSc in Civil Engineering - Wollo University -{'    '}
+          <a href={degSource} target="_blank" rel="noreferrer">
+            View
+          </a>
+        </p>
+        <p>
+          ❖ Software Engineering - ALX - (Present) -{' '}
+          <a href={trSource} target="_blank" rel="noreferrer">
+            View
+          </a>
+        </p>
+        <p>❖ AWS Cloud Computing - ALX - (Present)</p>
+        <p>
+          ❖ Generative AI - Coursera{' '}
+          <a href={corSource} target="_blank" rel="noreferrer">
+            View
+          </a>
         </p>
       </section>
-      <section id="section-page">
+      <section id="section-page" className="experience">
+        <h2>Experience</h2>
+        <br />
+        <h4>
+          ❖ Worked on <strong> designing and developing </strong>a web app for a
+          website hosting company
+          <p className="desc-exp">
+            # The design uses classic frontend tools like html, css and
+            javascript. It has been built on responsive design best practices.
+            Best SEO practices are implemented for performance and
+            accessibility.
+            <br />
+            <a href={hahuUrl} target="_blank" rel="noreferrer">
+              View Demo
+            </a>
+          </p>
+        </h4>
+      </section>
+      <section id="section-page" className="certificate">
+        <h2>Digital Certificates</h2>
+        <br />
+        <div className="cert-images">
+          <a href={CodeFound} target="_blank" rel="noreferrer">
+            <img
+              className="certs"
+              src="https://res.cloudinary.com/dm0frybrb/image/upload/v1695656054/Coursera_XUPDRC4BVQ52_iworgw.jpg"
+              alt="Coding foundation"
+            />
+            <p>Gen AI</p>
+          </a>
+          <a href={CodeFound} target="_blank" rel="noreferrer">
+            <img
+              className="certs"
+              src="https://res.cloudinary.com/dm0frybrb/image/upload/v1694596646/Coding_Foundation_Sololearn_tnqtl9.png"
+              alt="Coding foundation"
+            />
+            <p>
+              Coding
+              <br /> Foundation
+            </p>
+          </a>
+          <a href={PythonInt} target="_blank" rel="noreferrer">
+            <img
+              className="certs"
+              src="https://res.cloudinary.com/dm0frybrb/image/upload/v1694607733/Python_Intermediate_Sololearn_luxgtw.png"
+              alt="Python Intermediate"
+            />
+            <p>
+              Python
+              <br /> Intermediate
+            </p>
+          </a>
+          <a href={WebDev} target="_blank" rel="noreferrer">
+            <img
+              className="certs"
+              src="https://res.cloudinary.com/dm0frybrb/image/upload/v1694596646/Web_dev_Sololearn_syvctx.png"
+              alt="Web dev"
+            />
+            <p>
+              Web
+              <br />
+              development
+            </p>
+          </a>
+          <a href={JsInter} target="_blank" rel="noreferrer" className="hide">
+            <img
+              className="certs"
+              src="https://res.cloudinary.com/dm0frybrb/image/upload/v1694596647/Javascript_intermediate_Sololearn_qu1oe0.png"
+              alt="Js Intermediate"
+            />
+            <p>
+              JavaScript
+              <br />
+              Intermediate
+            </p>
+          </a>
+          <a href={IntroToJs} target="_blank" rel="noreferrer" className="hide">
+            <img
+              className="certs"
+              src="https://res.cloudinary.com/dm0frybrb/image/upload/v1694596646/Intro_to_JS_Sololearn_knn1wj.png"
+              alt="Intro to Js"
+            />
+            <p>
+              Introduction to
+              <br />
+              JavaScript
+            </p>
+          </a>
+          <a
+            href={IntroPython}
+            target="_blank"
+            rel="noreferrer"
+            className="hide"
+          >
+            <img
+              className="certs"
+              src="https://res.cloudinary.com/dm0frybrb/image/upload/v1694607732/Intro_to_Python_aezmw9.png"
+              alt="Intro to Python"
+            />
+            <p>
+              Introduction to
+              <br />
+              Python
+            </p>
+          </a>
+          <button className="viewBtn" onClick={toggleView}>
+            View more...
+          </button>
+        </div>
+      </section>
+      <section id="section-page" className="projects">
         <div>
           <ul className="projects">
             <li>
-              <h2>Todo List</h2>
-              <a href={todoSource} target="_blank" rel="noreferrer">
-                Source code
-              </a>
-              <a href={todoUrl} target="_blank" rel="noreferrer">
-                Demo
-              </a>
-            </li>
-            <li>
               <h2>Random Quran Verse Generator</h2>
-              <a href={quranSource} target="_blank" rel="noreferrer">
-                Source code
-              </a>
               <a href={quranUrl} target="_blank" rel="noreferrer">
-                Demo
+                Visit site
               </a>
             </li>
             <li>
               <h2>Hahu-Web-Hosting Design and Dev</h2>
-              <a href={hahuSource} target="_blank" rel="noreferrer">
-                Source code
-              </a>
               <a href={hahuUrl} target="_blank" rel="noreferrer">
-                Demo
+                Visit site
+              </a>
+            </li>
+            <li>
+              <h2>Todo List</h2>
+              <a href={todoUrl} target="_blank" rel="noreferrer">
+                Visit site
+              </a>
+            </li>
+            <li>
+              <h2>writings.dev</h2>
+              <a href={wrUrl} target="_blank" rel="noreferrer">
+                Visit site
+              </a>
+            </li>
+            <li>
+              <h2>#vanlife</h2>
+              <a href={vanUrl} target="_blank" rel="noreferrer">
+                Visit site
+              </a>
+            </li>
+            <li>
+              <h2>Alliance Medical Clinic</h2>
+              <p>In Progress</p>
+              <a href={allUrl} target="_blank" rel="noreferrer">
+                Visit site
+              </a>
+            </li>
+            <li>
+              <h2>#snaky</h2>
+              <a href={snakeUrl} target="_blank" rel="noreferrer">
+                Visit site
               </a>
             </li>
           </ul>
         </div>
       </section>
+      <footer>
+        <p>©zakisu | 2022</p>
+        <p>Addis Ababa, Ethiopia</p>
+        <p>
+          <a href={comPose} target="_blank" rel="noreferrer">
+            zakisudev@gmail.com
+          </a>
+        </p>
+      </footer>
     </div>
   );
 }

@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+Zekaria Mohammed's Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my personal portfolio! This repository serves as a showcase of my skills, projects, and journey in the world of software development and AWS Cloud Computing. Thank you for stopping by!
+About Me
 
-## Available Scripts
+I am Zekaria Mohammed, a passionate software developer currently pursuing my Software Engineering and AWS Cloud Computing certificate at ALX Africa. With a background in Civil Engineering and a deep enthusiasm for technology, I've embarked on a journey to build innovative software solutions and make a positive impact.
+What You'll Find Here
 
-In the project directory, you can run:
+    Projects: Explore a collection of projects I've worked on, ranging from web development to software engineering. Each project comes with a brief description and links to live demos or source code repositories.
 
-### `npm start`
+    Education: Learn about my educational background, including my pursuit of a BSc in Civil Engineering and my ongoing journey at ALX Africa, where I'm honing my software engineering and AWS Cloud Computing skills.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    Experience: Dive into my professional experience, where I've had the opportunity to work on web app development, utilizing classic frontend tools like HTML, CSS, and JavaScript. Each experience is accompanied by a brief description and links to relevant demos.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    Digital Certificates: View a selection of digital certificates I've earned from various online courses and platforms, showcasing my commitment to continuous learning and skill development.
 
-### `npm test`
+Get in Touch
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+I'm always excited to connect with fellow developers, collaborators, and tech enthusiasts. Feel free to reach out to me at zakisudev@gmail.com or connect with me on social media via the links below.
 
-### `npm run build`
+    GitHub - ![](https://gthub.com/zakisu250)
+    LinkedIn - ![](linkedin.com/in/zekaria-mohammed-6a74ab70/)
+    Twitter - ![](https://twitter.com/zakisu)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+How to Navigate This Portfolio
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    Explore the different sections to learn more about me, my projects, and my educational journey.
+    Click on project titles or links to access detailed project descriptions, live demos, or source code repositories.
+    Use the "View more..." button to reveal additional information about my certifications.
+    Toggle the theme switch to view the portfolio in either light or dark mode.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Contributions and Feedback
 
-### `npm run eject`
+If you have any suggestions, feedback, or would like to collaborate on a project, please don't hesitate to get in touch. Contributions and ideas are always welcome!
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you for visiting my portfolio. I look forward to connecting with you and sharing my passion for software development and technology.
