@@ -93,7 +93,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   margin: 0.5rem 0;
-  color: var(--mainTextcolor-light);
+  color: var(--mainTextColor-light);
   border-bottom: 1px solid var(--mainBorderColor);
 }
 

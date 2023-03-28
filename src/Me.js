@@ -14,10 +14,6 @@ import {
   lnkdLink,
   resumeLink,
   comPose,
-  todoSource,
-  quranSource,
-  hahuSource,
-  writeSource,
   trSource,
   degSource,
   corSource,
@@ -81,8 +77,7 @@ function Me() {
           <header className="resume-header">
             <h1>Zekaria Mohammed</h1>
             <p>
-              Software Developer, currently pursuing my Software Engineering and
-              AWS Cloud Computing Certificate{' '}
+              Software Developer and AWS Cloud Practitioner{' '}
               <a
                 href="https://www.alxafrica.com/"
                 target="_blank"
