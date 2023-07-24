@@ -1,8 +1,8 @@
 .toggle-switch {
-  position: relative;
+  position: absolute;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 40px;
+  height: 5px;
 }
 
 .toggle-checkbox {
@@ -18,8 +18,8 @@
 
 .toggle-inner {
   display: block;
-  width: 26px;
-  height: 26px;
+  width: 15px;
+  height: 15px;
   margin: 4px;
   background-color: #fff;
   border-radius: 50%;
@@ -31,5 +31,5 @@
 }
 
 .toggle-checkbox:checked + .toggle-label .toggle-inner {
-  margin-left: 30px; /* Move the inner toggle to the right when checked */
+  margin-left: 20px; /* Move the inner toggle to the right when checked */
 }

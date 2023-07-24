@@ -21,29 +21,28 @@ function Me() {
   const tweetLink = 'https://www.twitter.com/zakisu';
   const resumeLink =
     'https://drive.google.com/file/d/1GrrXUzbDpH4HZXSloYK7aTMz8vQBNa7e/view?usp=drive_link';
+  const comPose = 'https://mail.google.com/mail/u/0/#inbox?compose=new';
 
   const todoSource = 'https://github.com/zakisu250/To-do';
   const quranSource = 'https://github.com/zakisu250/Random-Quran-Verse';
   const hahuSource = 'https://github.com/zakisu250/HAHU';
   return (
     <div id="page-wrapper">
+      <div id="mode" className="toggle-switch">
+        <input
+          type="checkbox"
+          id="themeToggle"
+          className="toggle-checkbox"
+          checked={theme === 'dark'}
+          onChange={toggleTheme}
+        />
+        <label htmlFor="themeToggle" className="toggle-label">
+          <span className="toggle-inner"></span>
+          <span className="toggle-switch"></span>
+        </label>
+      </div>
       <section id="section-page" className="section-hero">
-        <div id="mode" className="toggle-switch">
-          <input
-            type="checkbox"
-            id="themeToggle"
-            className="toggle-checkbox"
-            checked={theme === 'dark'}
-            onChange={toggleTheme}
-          />
-          <label htmlFor="themeToggle" className="toggle-label">
-            <span className="toggle-inner"></span>
-            <span className="toggle-switch"></span>
-          </label>
-        </div>
-        <div className="my-pic">
-          <img src={proPic} alt="" />
-        </div>
+        <img src={proPic} alt="" className="my-pic" />
         <div>
           <header className="resume-header">
             <h1>Zekaria Mohammed</h1>
@@ -52,7 +51,7 @@ function Me() {
               Certificate @ALX
             </p>
             <p>
-              <a href="https://mail.google.com/mail/u/0/#inbox?compose=new">
+              <a href={comPose} _blank>
                 ▶ zakisu250@gmail.com
               </a>
             </p>
@@ -62,16 +61,24 @@ function Me() {
       <section id="section-page" className="social-links">
         <ul className="social-links">
           <li>
-            <a href={ytLink}>YouTube</a>
+            <a href={ytLink} target="_blank" rel="noreferrer">
+              YouTube
+            </a>
           </li>
           <li>
-            <a href={tweetLink}>Twitter</a>
+            <a href={tweetLink} target="_blank" rel="noreferrer">
+              Twitter
+            </a>
           </li>
           <li>
-            <a href={gitLink}>Github</a>
+            <a href={gitLink} target="_blank" rel="noreferrer">
+              Github
+            </a>
           </li>
           <li>
-            <a href={resumeLink}>Download Resume</a>
+            <a href={resumeLink} target="_blank" rel="noreferrer">
+              Download Resume
+            </a>
           </li>
         </ul>
       </section>
@@ -93,19 +100,31 @@ function Me() {
         <div>
           <ul className="projects">
             <li>
-              <h4>Todo List</h4>
-              <a href={todoSource}>Source code</a>
-              <a href={todoUrl}>Live demo</a>
+              <h2>Todo List</h2>
+              <a href={todoSource} target="_blank" rel="noreferrer">
+                Source code
+              </a>
+              <a href={todoUrl} target="_blank" rel="noreferrer">
+                Demo
+              </a>
             </li>
             <li>
-              <h4>Random Quran Generator</h4>
-              <a href={quranSource}>Source code</a>
-              <a href={quranUrl}>Live demo</a>
+              <h2>Random Quran Verse Generator</h2>
+              <a href={quranSource} target="_blank" rel="noreferrer">
+                Source code
+              </a>
+              <a href={quranUrl} target="_blank" rel="noreferrer">
+                Demo
+              </a>
             </li>
             <li>
-              <h4>Hahu Web Hosting Design and Development</h4>
-              <a href={hahuSource}>Source code</a>
-              <a href={hahuUrl}>Live demo</a>
+              <h2>Hahu-Web-Hosting Design and Dev</h2>
+              <a href={hahuSource} target="_blank" rel="noreferrer">
+                Source code
+              </a>
+              <a href={hahuUrl} target="_blank" rel="noreferrer">
+                Demo
+              </a>
             </li>
           </ul>
         </div>

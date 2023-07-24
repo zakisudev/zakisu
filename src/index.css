@@ -42,7 +42,7 @@ a:hover {
 
 .section-hero {
   display: flex;
-  gap: 30px;
+  gap: 50px;
   align-items: center;
   justify-content: center;
   padding-top: 2rem;
@@ -51,8 +51,8 @@ a:hover {
 .my-pic {
   width: 200px;
   height: 200px;
-  background: rgb(226, 226, 226);
   border-radius: 50%;
+  background: rgb(240, 240, 240);
 }
 
 .resume-header h1 {
@@ -80,10 +80,29 @@ a:hover {
   color: var(--mainTextcolor-light);
 }
 
+li h4 {
+  font-size: 1.5rem;
+}
 #mode {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 50px;
-  right: 100px;
+  top: 2%;
+  right: 20%;
+}
+
+@media (max-width: 600px) {
+  .section-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+  }
+  .social-links {
+    display: block;
+  }
+  .projects a {
+    font-size: 1rem;
+  }
 }
