@@ -59,3 +59,17 @@ a:hover {
   gap: 5rem;
   font-size: 1.5rem;
 }
+.desc-exp {
+  padding-left: 20px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects li {
+  display: flex;
+  flex-direction: column;
+  color: var(--mainTextcolor-light);
+}

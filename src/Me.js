@@ -1,7 +1,16 @@
 import './index.css';
+import { proPic, todoUrl, quranUrl, hahuUrl } from './vars.js';
 
 function Me() {
-  const proPic = '../images/photo.jpg';
+  const ytLink = 'https://www.youtube.com/channel/UCPR3tI0avH_3oNMaJNb88Mw';
+  const gitLink = 'https://www.github.com/zakisu250';
+  const tweetLink = 'https://www.twitter.com/zakisu';
+  const resumeLink =
+    'https://drive.google.com/file/d/1GrrXUzbDpH4HZXSloYK7aTMz8vQBNa7e/view?usp=drive_link';
+
+  const todoSource = 'https://github.com/zakisu250/To-do';
+  const quranSource = 'https://github.com/zakisu250/Random-Quran-Verse';
+  const hahuSource = 'https://github.com/zakisu250/HAHU';
   return (
     <div id="page-wrapper" className="App">
       <section id="section-page" className="section-hero">
@@ -26,18 +35,16 @@ function Me() {
       <section id="section-page" className="social-links">
         <ul className="social-links">
           <li>
-            <a href="https://www.youtube.com/channel/UCPR3tI0avH_3oNMaJNb88Mw">
-              YouTube
-            </a>
+            <a href={ytLink}>YouTube</a>
           </li>
           <li>
-            <a href="https://www.twitter.com/zakisu">Twitter</a>
+            <a href={tweetLink}>Twitter</a>
           </li>
           <li>
-            <a href="https://www.github.com/zakisu250">Github</a>
+            <a href={gitLink}>Github</a>
           </li>
           <li>
-            <a href="#">Download Resume</a>
+            <a href={resumeLink}>Download Resume</a>
           </li>
         </ul>
       </section>
@@ -49,22 +56,29 @@ function Me() {
       <section id="section-page" className="Experience">
         <h2>Experience</h2>
         <p>
-          ❖ Fantahun Getnet General Contractor - Technical Manager - (2017 -
-          2021)
+          ❖ Fantahun Getnet General Contractor - Technical Manager
+          <p className="desc-exp">
+            - Worked as a Technical Manager at different sites. (2017 - 2021)
+          </p>
         </p>
       </section>
-      <section id="section-page" className="projects">
+      <section id="section-page">
         <div>
-          <ul>
+          <ul className="projects">
             <li>
               <h4>Todo List</h4>
-              <a href="#">Source code</a>
-              <a href="#">Live demo</a>
+              <a href={todoSource}>Source code</a>
+              <a href={todoUrl}>Live demo</a>
             </li>
             <li>
               <h4>Random Quran Generator</h4>
-              <a href="#">Source code</a>
-              <a href="#">Live demo</a>
+              <a href={quranSource}>Source code</a>
+              <a href={quranUrl}>Live demo</a>
+            </li>
+            <li>
+              <h4>Hahu Web Hosting Design and Development</h4>
+              <a href={hahuSource}>Source code</a>
+              <a href={hahuUrl}>Live demo</a>
             </li>
           </ul>
         </div>
