@@ -1,0 +1,14 @@
+:root {
+  --mainBgColor-dark: rgb(45, 45, 45);
+  --mainTextColor-dark: rgb(247, 247, 247);
+  --mainLinkColor-dark: rgb(0, 150, 196);
+  --mainHeaderColor-dark: rgb(0, 53, 97);
+  --secLinkColor-dark: rgb(202, 202, 202);
+  --mainBorderColor: rgb(204, 204, 204);
+
+  --mainBgColor-light: rgb(247, 247, 247);
+  --mainTextColor-light: rgb(45, 45, 45);
+  --mainLinkColor-light: rgb(0, 150, 196);
+  --mainHeaderColor-light: rgb(0, 53, 97);
+  --secLinkColor-light: rgb(110, 110, 110);
+}
