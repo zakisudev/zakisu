@@ -1,7 +1,21 @@
-import './index.css';
+import React, { useState, useEffect } from 'react';
 import { proPic, todoUrl, quranUrl, hahuUrl } from './vars.js';
+import './index.css';
+import './me.css';
 
 function Me() {
+  const [theme, setTheme] = useState('light');
+
+  const toggleTheme = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    console.log('here');
+    setTheme(newTheme);
+  };
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+  }, [theme]);
+
   const ytLink = 'https://www.youtube.com/channel/UCPR3tI0avH_3oNMaJNb88Mw';
   const gitLink = 'https://www.github.com/zakisu250';
   const tweetLink = 'https://www.twitter.com/zakisu';
@@ -12,8 +26,21 @@ function Me() {
   const quranSource = 'https://github.com/zakisu250/Random-Quran-Verse';
   const hahuSource = 'https://github.com/zakisu250/HAHU';
   return (
-    <div id="page-wrapper" className="App">
+    <div id="page-wrapper">
       <section id="section-page" className="section-hero">
+        <div id="mode" className="toggle-switch">
+          <input
+            type="checkbox"
+            id="themeToggle"
+            className="toggle-checkbox"
+            checked={theme === 'dark'}
+            onChange={toggleTheme}
+          />
+          <label htmlFor="themeToggle" className="toggle-label">
+            <span className="toggle-inner"></span>
+            <span className="toggle-switch"></span>
+          </label>
+        </div>
         <div className="my-pic">
           <img src={proPic} alt="" />
         </div>

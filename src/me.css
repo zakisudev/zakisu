@@ -1,0 +1,35 @@
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.toggle-checkbox {
+  display: none;
+}
+
+.toggle-label {
+  display: block;
+  background-color: #ccc;
+  border-radius: 34px;
+  cursor: pointer;
+}
+
+.toggle-inner {
+  display: block;
+  width: 26px;
+  height: 26px;
+  margin: 4px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: margin-left 0.3s;
+}
+
+.toggle-checkbox:checked + .toggle-label {
+  background-color: #007bff; /* Color for the toggle when checked */
+}
+
+.toggle-checkbox:checked + .toggle-label .toggle-inner {
+  margin-left: 30px; /* Move the inner toggle to the right when checked */
+}

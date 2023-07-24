@@ -6,8 +6,15 @@
 }
 body {
   font-family: 'Poppins', sans-serif;
-  background: var(--mainBgColor-light);
+}
+
+[data-theme='light'] {
+  background-color: var(--mainBgColor-light);
   color: var(--mainTextColor-light);
+}
+[data-theme='dark'] {
+  background-color: var(--mainBgColor-dark);
+  color: var(--mainTextColor-dark);
 }
 
 #page-wrapper {
@@ -71,4 +78,12 @@ a:hover {
   display: flex;
   flex-direction: column;
   color: var(--mainTextcolor-light);
+}
+
+#mode {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  right: 100px;
 }
