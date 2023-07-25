@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { proPic, todoUrl, quranUrl, hahuUrl, writeUrl } from './vars.js';
+import { proPic, todoUrl, quranUrl, hahuUrl, wrUrl } from './vars.js';
 import './index.css';
 import './me.css';
 
@@ -132,7 +132,7 @@ function Me() {
               <a href={writeSource} target="_blank" rel="noreferrer">
                 Source code
               </a>
-              <a href={writeUrl} target="_blank" rel="noreferrer">
+              <a href={wrUrl} target="_blank" rel="noreferrer">
                 Demo
               </a>
             </li>
