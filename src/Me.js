@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { proPic, todoUrl, quranUrl, hahuUrl } from './vars.js';
+import { proPic, todoUrl, quranUrl, hahuUrl, writeUrl } from './vars.js';
 import './index.css';
 import './me.css';
 
