@@ -3,4 +3,4 @@ export const proPic =
 export const todoUrl = 'https://todo-list-nu-lovat.vercel.app/';
 export const quranUrl = 'https://random-quran-verse.vercel.app/';
 export const hahuUrl = 'https://hahu-web-hosting.vercel.app/';
-export const writeUrl = 'https://zakisu250.github.io/writings.dev/';
+export const wrUrl = 'https://zakisu250.github.io/writings.dev/';
