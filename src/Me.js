@@ -26,6 +26,7 @@ function Me() {
   const todoSource = 'https://github.com/zakisu250/To-do';
   const quranSource = 'https://github.com/zakisu250/Random-Quran-Verse';
   const hahuSource = 'https://github.com/zakisu250/HAHU';
+  const writeSource = 'https://github.com/zakisu250/writings.dev';
   return (
     <div id="page-wrapper">
       <div id="mode" className="toggle-switch">
@@ -123,6 +124,15 @@ function Me() {
                 Source code
               </a>
               <a href={hahuUrl} target="_blank" rel="noreferrer">
+                Demo
+              </a>
+            </li>
+            <li>
+              <h2>writings.dev</h2>
+              <a href={writeSource} target="_blank" rel="noreferrer">
+                Source code
+              </a>
+              <a href={writeUrl} target="_blank" rel="noreferrer">
                 Demo
               </a>
             </li>
