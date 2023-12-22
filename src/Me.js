@@ -4,7 +4,6 @@ import {
   proPic,
   todoUrl,
   quranUrl,
-  hahuUrl,
   wrUrl,
   filwuha,
   jobs,
@@ -40,6 +39,7 @@ function Me() {
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
   }, [theme]);
+
   function toggleView() {
     const viewBtn = document.querySelector('.viewBtn');
     const hide = document.querySelectorAll('.hide');
