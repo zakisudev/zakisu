@@ -152,14 +152,16 @@ function Me() {
         <br />
         <h4>
           ❖ Worked on <strong> designing and developing </strong>a web app for a
-          website hosting company
+          bathing service provider
           <p className="desc-exp">
-            # The design uses classic frontend tools like html, css and
-            javascript. It has been built on responsive design best practices.
-            Best SEO practices are implemented for performance and
-            accessibility.
+            # The design was made in Figma and uses React library and tailwind
+            css for frontend and Python Flask for the backend service. Making
+            sure the customer has a smooth experience while using the app was
+            the main goal. The app is hosted on Vercel and the backend is hosted
+            on Render. The app also allows admins to manage the orders and the
+            customers.
             <br />
-            <a href={hahuUrl} target="_blank" rel="noreferrer">
+            <a href={filwuha} target="_blank" rel="noreferrer">
               View Demo
             </a>
           </p>
