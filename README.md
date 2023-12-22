@@ -61,10 +61,10 @@ Get in Touch
 
 I'm always excited to connect with fellow developers, collaborators, and tech enthusiasts. Feel free to reach out to me at zakisudev@gmail.com or connect with me on social media via the links below.
 
-    GitHub - [GitHub](https://github.com/zakisudev)
-    LinkedIn - [LinkedIn](https://www.linkedin.com/in/zakisudev)
-    Twitter - [Twitter](https://twitter.com/zakisu)
-    Website - [Website](https://www.zakisu.tech)
+GitHub - [GitHub](https://github.com/zakisudev)
+LinkedIn - [LinkedIn](https://www.linkedin.com/in/zakisudev)
+Twitter - [Twitter](https://twitter.com/zakisu)
+Website - [Website](https://www.zakisu.tech)
 
 
 How to Navigate This Portfolio
