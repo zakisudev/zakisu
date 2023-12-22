@@ -1,13 +1,13 @@
 :root {
   --mainBgColor-dark: rgb(29, 29, 29);
-  --mainTextColor-dark: rgb(226, 226, 226);
+  --mainTextColor-dark: rgb(135, 135, 135);
   --mainLinkColor-dark: rgb(0, 150, 196);
   --mainHeaderColor-dark: rgb(0, 53, 97);
   --secLinkColor-dark: rgb(176, 190, 252);
   --mainBorderColor: rgb(204, 204, 204);
 
   --mainBgColor-light: rgb(255, 255, 255);
-  --mainTextColor-light: rgb(45, 45, 45);
+  --mainTextColor-light: rgb(135, 135, 135);
   --mainLinkColor-light: rgb(0, 116, 151);
   --mainHeaderColor-light: rgb(0, 53, 97);
   --secLinkColor-light: rgba(0, 150, 196, 0.829);
