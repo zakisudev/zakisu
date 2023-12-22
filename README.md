@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 **Zekaria's Portfolio**
 
 Welcome to my personal portfolio! This repository serves as a showcase of my skills,
@@ -28,11 +27,12 @@ demos or source code repositories.*
 
 I'm always excited to connect with fellow developers, collaborators, and tech enthusiasts. Feel free to reach out to me at zakisudev@gmail.com or connect with me on social media via the links below.
 
-    GitHub - https://gthub.com/zakisu250
-    LinkedIn - linkedin.com/in/zekaria-mohammed-6a74ab70
+    GitHub - https://gthub.com/zakisudev
+    LinkedIn - linkedin.com/in/zakisudev
     Twitter - https://twitter.com/zakisu
+    website - https://www.zakisu.tech
 
-Visit my website: https://zakisu.vercel.app and
+Visit my website: https://www.zakisu.tech and
     Use the "View more..." button to reveal additional information about my certifications.
     Toggle the theme switch to view the portfolio in either light or dark mode.
 
@@ -61,9 +61,10 @@ Get in Touch
 
 I'm always excited to connect with fellow developers, collaborators, and tech enthusiasts. Feel free to reach out to me at zakisudev@gmail.com or connect with me on social media via the links below.
 
-    GitHub - ![](https://gthub.com/zakisu250)
-    LinkedIn - ![](linkedin.com/in/zekaria-mohammed-6a74ab70/)
-    Twitter - ![](https://twitter.com/zakisu)
+    GitHub - ![ZAKISUDEV](https://gthub.com/zakisudev)
+    LinkedIn - ![ZAKISUDEV](linkedin.com/in/zakisudev)
+    Twitter - ![ZAKISU](https://twitter.com/zakisu)
+    Website - ![ZAKISU](https://www.zakisu.tech)
 
 How to Navigate This Portfolio
 
@@ -76,5 +77,4 @@ Contributions and Feedback
 
 If you have any suggestions, feedback, or would like to collaborate on a project, please don't hesitate to get in touch. Contributions and ideas are always welcome!
 
->>>>>>> 701795193febe95dc765a0a24ab7244fed71f871
 Thank you for visiting my portfolio. I look forward to connecting with you and sharing my passion for software development and technology.
