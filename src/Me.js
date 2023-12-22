@@ -6,7 +6,8 @@ import {
   quranUrl,
   hahuUrl,
   wrUrl,
-  allUrl,
+  filwuha,
+  jobs,
   snakeUrl,
   ytLink,
   gitLink,
@@ -260,44 +261,52 @@ function Me() {
         <div>
           <ul className="projects">
             <li>
+              <h2>Filwuha Orders</h2>
+              <p>
+                A reservation webapp to order your bathing services beforehand
+              </p>
+              <a href={filwuha} target="_blank" rel="noreferrer">
+                Visit site
+              </a>
+            </li>
+            <li>
+              <h2>Z-jobs</h2>
+              <p>Tracking your jobs has never been easier</p>
+              <a href={jobs} target="_blank" rel="noreferrer">
+                Visit site
+              </a>
+            </li>
+            <li>
               <h2>Random Quran Verse Generator</h2>
+              <p>Generate Random verses from the holy Quran</p>
               <a href={quranUrl} target="_blank" rel="noreferrer">
                 Visit site
               </a>
             </li>
             <li>
-              <h2>Hahu-Web-Hosting Design and Dev</h2>
-              <a href={hahuUrl} target="_blank" rel="noreferrer">
-                Visit site
-              </a>
-            </li>
-            <li>
               <h2>Todo List</h2>
+              <p>Jot down and manage your todos, saving them for later too</p>
               <a href={todoUrl} target="_blank" rel="noreferrer">
                 Visit site
               </a>
             </li>
             <li>
               <h2>writings.dev</h2>
+              <p>Simple blog website created with html and css</p>
               <a href={wrUrl} target="_blank" rel="noreferrer">
                 Visit site
               </a>
             </li>
             <li>
               <h2>#vanlife</h2>
+              <p>Rent vans and post vans to rent on this platform</p>
               <a href={vanUrl} target="_blank" rel="noreferrer">
                 Visit site
               </a>
             </li>
             <li>
-              <h2>Alliance Medical Clinic</h2>
-              <p>In Progress</p>
-              <a href={allUrl} target="_blank" rel="noreferrer">
-                Visit site
-              </a>
-            </li>
-            <li>
               <h2>#snaky</h2>
+              <p>A React snake game</p>
               <a href={snakeUrl} target="_blank" rel="noreferrer">
                 Visit site
               </a>
