@@ -18,7 +18,8 @@ export const quranUrl = 'https://zakisu.tech/';
 export const hahuUrl = 'https://hahu-web-hosting.vercel.app/';
 export const wrUrl = 'https://zakisu250.github.io/writings.dev/';
 export const vanUrl = 'https://van-life-pink.vercel.app/';
-export const allUrl = 'https://alliance-medium-clinic-front.vercel.app/';
+export const filwuha = 'https://filwuha-ms.vercel.app/';
+export const jobs = 'https://jobs.zakisu.tech/';
 export const snakeUrl = 'https://splendid-caramel-c2530a.netlify.app/';
 
 export const ytLink =
