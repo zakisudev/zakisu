@@ -28,14 +28,13 @@ export const gitLink = 'https://www.github.com/zakisu250';
 export const lnkdLink = 'https://linkedin.com/in/zakisudev/';
 export const tweetLink = 'https://www.twitter.com/zakisu';
 export const resumeLink =
-  'https://github.com/zakisu250/zakisu/blob/main/Zekaria_Hussien.pdf';
+  'https://drive.google.com/file/d/1iQJYmRBTtXYpdT7dYvEbhd5iUaSHy9do/view?usp=sharing';
 
 export const comPose = 'https://mail.google.com/mail/u/0/#inbox?compose=new';
 
 export const todoSource =
   'https://github.com/zakisu250/JS-course-Tutorials/tree/eb65014e87a6f4c972897c72675277cb8831a44d/Todo';
 export const quranSource = 'https://github.com/zakisu250/Random-Quran-Verse';
-export const hahuSource = 'https://github.com/zakisu250/HAHU';
 export const writeSource = 'https://github.com/zakisu250/writings.dev';
 
 export const degSource =
