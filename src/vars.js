@@ -24,7 +24,7 @@ export const snakeUrl = 'https://splendid-caramel-c2530a.netlify.app/';
 
 export const ytLink =
   'https://www.youtube.com/channel/UCPR3tI0avH_3oNMaJNb88Mw';
-export const gitLink = 'https://www.github.com/zakisu250';
+export const gitLink = 'https://www.github.com/zakisudev';
 export const lnkdLink = 'https://linkedin.com/in/zakisudev/';
 export const tweetLink = 'https://www.twitter.com/zakisu';
 export const resumeLink =
