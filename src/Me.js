@@ -6,6 +6,7 @@ import {
   quranUrl,
   wrUrl,
   filwuha,
+  realUrl,
   jobs,
   snakeUrl,
   ytLink,
@@ -13,7 +14,6 @@ import {
   tweetLink,
   lnkdLink,
   resumeLink,
-  comPose,
   trSource,
   degSource,
   corSource,
@@ -23,6 +23,9 @@ import {
   vanUrl,
   PythonInt,
   IntroPython,
+  eComUrl,
+  digUrl,
+  disUrl,
 } from './vars.js';
 import './index.css';
 import './me.css';
@@ -32,29 +35,12 @@ function Me() {
 
   const toggleTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
-    console.log('here');
     setTheme(newTheme);
   };
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
   }, [theme]);
-
-  function toggleView() {
-    const viewBtn = document.querySelector('.viewBtn');
-    const hide = document.querySelectorAll('.hide');
-    viewBtn.addEventListener('click', () => {
-      hide.forEach((item) => {
-        if (item.style.display === 'none') {
-          item.style.display = 'block';
-          viewBtn.innerHTML = 'View less...';
-        } else {
-          item.style.display = 'none';
-          viewBtn.innerHTML = 'View more...';
-        }
-      });
-    });
-  }
 
   return (
     <div id="page-wrapper">
@@ -73,12 +59,12 @@ function Me() {
         </label>
       </div>
       <section id="section-page" className="section-hero">
-        <img src={proPic} alt="" className="my-pic" />
+        <img src={proPic} alt="avatar" className="my-pic" />
         <div>
           <header className="resume-header">
             <h1>Zekaria Mohammed</h1>
             <p>
-              Software Developer and AWS Cloud Practitioner{' '}
+              Software Engineer{' '}
               <a
                 href="https://www.alxafrica.com/"
                 target="_blank"
@@ -88,62 +74,88 @@ function Me() {
               </a>
             </p>
             <p>
-              <a href={comPose} target="_blank" rel="noreferrer">
+              <a
+                href={`mailto:zakisudev@gmail.com?subject=resume-review&body=Hey Zaki`}
+                target="_blank"
+                rel="noreferrer"
+              >
                 ▶ zakisudev@gmail.com
               </a>
             </p>
+            <p>Bole Addis Ababa, Ethiopia</p>
+            <p>
+              <a href="tel:+251913 250250">+251913 250250</a>
+            </p>
           </header>
+          <ul className="social-links">
+            <li>
+              <a href={gitLink} target="_blank" rel="noreferrer">
+                <i className="fa-brands fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href={lnkdLink} target="_blank" rel="noreferrer">
+                <i className="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href={tweetLink} target="_blank" rel="noreferrer">
+                <i className="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href={ytLink} target="_blank" rel="noreferrer">
+                <i className="fa-brands fa-youtube"></i>
+              </a>
+            </li>
+            <li>
+              <a href={resumeLink} target="_blank" rel="noreferrer">
+                Resume
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
-      <section id="section-page" className="social-links">
-        <ul className="social-links">
-          <li>
-            <a href={gitLink} target="_blank" rel="noreferrer">
-              <i className="fa-brands fa-github"></i>
-            </a>
-          </li>
-          <li>
-            <a href={lnkdLink} target="_blank" rel="noreferrer">
-              <i className="fa-brands fa-linkedin"></i>
-            </a>
-          </li>
-          <li>
-            <a href={tweetLink} target="_blank" rel="noreferrer">
-              <i className="fa-brands fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a href={ytLink} target="_blank" rel="noreferrer">
-              <i className="fa-brands fa-youtube"></i>
-            </a>
-          </li>
-          <li>
-            <a href={resumeLink} target="_blank" rel="noreferrer">
-              Resume
-            </a>
-          </li>
-        </ul>
+      <section id="section-page" className="section-summary">
+        <p>
+          Dedicated professional with a unique eye for design and software
+          development, offering a rare combination of problem-solving skills,
+          attention to detail and technical proficiency. A solid foundation in
+          frontend website development and backend API integration together with
+          AWS cloud computing skills, I bring a multidisciplinary approach to
+          fullstack web development.
+        </p>
       </section>
       <section id="section-page" className="education">
         <h2>Education</h2>
         <br />
+        <p>
+          ❖ Software Engineering - ALX - (2023 - Present) -{' '}
+          <a href={trSource} target="_blank" rel="noreferrer">
+            View
+          </a>
+        </p>
         <p>
           ❖ BSc in Civil Engineering - Wollo University -{'    '}
           <a href={degSource} target="_blank" rel="noreferrer">
             View
           </a>
         </p>
+        <p>❖ AWS Cloud Computing - ALX - (Present)</p>
         <p>
-          ❖ Software Engineering - ALX - (Present) -{' '}
-          <a href={trSource} target="_blank" rel="noreferrer">
+          ❖ Generative AI - Coursera -
+          <a href={corSource} target="_blank" rel="noreferrer">
             View
           </a>
         </p>
-        <p>❖ AWS Cloud Computing - ALX - (Present)</p>
         <p>
-          ❖ Generative AI - Coursera{' '}
-          <a href={corSource} target="_blank" rel="noreferrer">
-            View
+          ❖ Backend development and APIs -{' '}
+          <a
+            href="https://www.freecodecamp.org/certification/fcc1927bc8c-4f56-4a48-81c3-dd3ed121cab5/back-end-development-and-apis"
+            target="_blank"
+            rel="noreferrer"
+          >
+            FreeCodeCamp
           </a>
         </p>
       </section>
@@ -170,148 +182,148 @@ function Me() {
       <section id="section-page" className="certificate">
         <h2>Digital Certificates</h2>
         <br />
-        <div className="cert-images">
-          <a href={CodeFound} target="_blank" rel="noreferrer">
-            <img
-              className="certs"
-              src="https://res.cloudinary.com/dm0frybrb/image/upload/v1695656054/Coursera_XUPDRC4BVQ52_iworgw.jpg"
-              alt="Coding foundation"
-            />
-            <p>Gen AI</p>
-          </a>
-          <a href={CodeFound} target="_blank" rel="noreferrer">
-            <img
-              className="certs"
-              src="https://res.cloudinary.com/dm0frybrb/image/upload/v1694596646/Coding_Foundation_Sololearn_tnqtl9.png"
-              alt="Coding foundation"
-            />
-            <p>
-              Coding
-              <br /> Foundation
-            </p>
-          </a>
-          <a href={PythonInt} target="_blank" rel="noreferrer">
-            <img
-              className="certs"
-              src="https://res.cloudinary.com/dm0frybrb/image/upload/v1694607733/Python_Intermediate_Sololearn_luxgtw.png"
-              alt="Python Intermediate"
-            />
-            <p>
-              Python
-              <br /> Intermediate
-            </p>
-          </a>
-          <a href={WebDev} target="_blank" rel="noreferrer">
-            <img
-              className="certs"
-              src="https://res.cloudinary.com/dm0frybrb/image/upload/v1694596646/Web_dev_Sololearn_syvctx.png"
-              alt="Web dev"
-            />
-            <p>
-              Web
-              <br />
-              development
-            </p>
-          </a>
-          <a href={JsInter} target="_blank" rel="noreferrer" className="hide">
-            <img
-              className="certs"
-              src="https://res.cloudinary.com/dm0frybrb/image/upload/v1694596647/Javascript_intermediate_Sololearn_qu1oe0.png"
-              alt="Js Intermediate"
-            />
-            <p>
-              JavaScript
-              <br />
-              Intermediate
-            </p>
-          </a>
-          <a href={IntroToJs} target="_blank" rel="noreferrer" className="hide">
-            <img
-              className="certs"
-              src="https://res.cloudinary.com/dm0frybrb/image/upload/v1694596646/Intro_to_JS_Sololearn_knn1wj.png"
-              alt="Intro to Js"
-            />
-            <p>
-              Introduction to
-              <br />
-              JavaScript
-            </p>
-          </a>
-          <a
-            href={IntroPython}
-            target="_blank"
-            rel="noreferrer"
-            className="hide"
-          >
-            <img
-              className="certs"
-              src="https://res.cloudinary.com/dm0frybrb/image/upload/v1694607732/Intro_to_Python_aezmw9.png"
-              alt="Intro to Python"
-            />
-            <p>
-              Introduction to
-              <br />
-              Python
-            </p>
-          </a>
-          <button className="viewBtn" onClick={toggleView}>
-            View more...
-          </button>
-        </div>
+        <ul className="cert-images">
+          <li>
+            <a href={CodeFound} target="_blank" rel="noreferrer">
+              Gen AI
+            </a>
+          </li>
+          <li>
+            <a href={CodeFound} target="_blank" rel="noreferrer">
+              Coding Foundation
+            </a>
+          </li>
+          <li>
+            <pa href={PythonInt} target="_blank" rel="noreferrer">
+              Python Intermediate
+            </pa>
+          </li>
+          <li>
+            <a href={WebDev} target="_blank" rel="noreferrer">
+              Web development
+            </a>
+          </li>
+          <li>
+            <a href={JsInter} target="_blank" rel="noreferrer" className="hide">
+              JavaScript Intermediate
+            </a>
+          </li>
+          <li>
+            <a
+              href={IntroToJs}
+              target="_blank"
+              rel="noreferrer"
+              className="hide"
+            >
+              Introduction to JavaScript
+            </a>
+          </li>
+          <li>
+            <a
+              href={IntroPython}
+              target="_blank"
+              rel="noreferrer"
+              className="hide"
+            >
+              Introduction to Python
+            </a>
+          </li>
+        </ul>
       </section>
       <section id="section-page" className="projects">
         <div>
           <ul className="projects">
-            <li>
-              <h2>Filwuha Orders</h2>
-              <p>
-                A reservation webapp to order your bathing services beforehand
-              </p>
-              <a href={filwuha} target="_blank" rel="noreferrer">
-                Visit site
-              </a>
+            <li className="proj-list">
+              <div className="proj">
+                <h2>Real-estate web app</h2>
+                <p>
+                  Real-estate app where you can post, rent and sale your
+                  possessions
+                </p>
+                <a href={realUrl} target="_blank" rel="noreferrer">
+                  Visit site
+                </a>
+              </div>
+              <div className="proj">
+                <h2>Mey-shop E-commerce web app</h2>
+                <p>An E-commerce app you can modify to work on production</p>
+                <a href={eComUrl} target="_blank" rel="noreferrer">
+                  Visit site
+                </a>
+              </div>
+            </li>
+            <li className="proj-list">
+              <div className="proj">
+                <h2>Filwuha Orders</h2>
+                <p>Spot reservation for bathing service provider</p>
+                <a href={filwuha} target="_blank" rel="noreferrer">
+                  Visit site
+                </a>
+              </div>
+              <div className="proj">
+                <h2>Z-jobs</h2>
+                <p>Tracking your jobs has never been easier</p>
+                <a href={jobs} target="_blank" rel="noreferrer">
+                  Visit site
+                </a>
+              </div>
             </li>
             <li>
-              <h2>Z-jobs</h2>
-              <p>Tracking your jobs has never been easier</p>
-              <a href={jobs} target="_blank" rel="noreferrer">
-                Visit site
-              </a>
+              <div className="proj">
+                <h2>Random Quran Verse Generator</h2>
+                <p>Generate Random verses from the holy Quran</p>
+                <a href={quranUrl} target="_blank" rel="noreferrer">
+                  Visit site
+                </a>
+              </div>
+              <div className="proj">
+                <h2>Todo List</h2>
+                <p>Jot down and manage your todos, saving them for later too</p>
+                <a href={todoUrl} target="_blank" rel="noreferrer">
+                  Visit site
+                </a>
+              </div>
             </li>
             <li>
-              <h2>Random Quran Verse Generator</h2>
-              <p>Generate Random verses from the holy Quran</p>
-              <a href={quranUrl} target="_blank" rel="noreferrer">
-                Visit site
-              </a>
+              <div className="proj">
+                <h2>Discord clone</h2>
+                <p>Socket.io and MERN stack discord clone</p>
+                <a href={disUrl} target="_blank" rel="noreferrer">
+                  View Code base
+                </a>
+              </div>
+              <div className="proj">
+                <h2>Digital-resume</h2>
+                <p>Build your digital resume</p>
+                <a href={digUrl} target="_blank" rel="noreferrer">
+                  View Code base
+                </a>
+              </div>
             </li>
             <li>
-              <h2>Todo List</h2>
-              <p>Jot down and manage your todos, saving them for later too</p>
-              <a href={todoUrl} target="_blank" rel="noreferrer">
-                Visit site
-              </a>
+              <div className="proj">
+                <h2>writings.dev</h2>
+                <p>Simple blog website created with html and css</p>
+                <a href={wrUrl} target="_blank" rel="noreferrer">
+                  Visit site
+                </a>
+              </div>
+              <div className="proj">
+                <h2>#vanlife</h2>
+                <p>Rent vans and post vans to rent on this platform</p>
+                <a href={vanUrl} target="_blank" rel="noreferrer">
+                  Visit site
+                </a>
+              </div>
             </li>
             <li>
-              <h2>writings.dev</h2>
-              <p>Simple blog website created with html and css</p>
-              <a href={wrUrl} target="_blank" rel="noreferrer">
-                Visit site
-              </a>
-            </li>
-            <li>
-              <h2>#vanlife</h2>
-              <p>Rent vans and post vans to rent on this platform</p>
-              <a href={vanUrl} target="_blank" rel="noreferrer">
-                Visit site
-              </a>
-            </li>
-            <li>
-              <h2>#snaky</h2>
-              <p>A React snake game</p>
-              <a href={snakeUrl} target="_blank" rel="noreferrer">
-                Visit site
-              </a>
+              <div className="proj">
+                <h2>#snaky</h2>
+                <p>A React snake game</p>
+                <a href={snakeUrl} target="_blank" rel="noreferrer">
+                  Visit site
+                </a>
+              </div>
             </li>
           </ul>
         </div>
@@ -320,7 +332,11 @@ function Me() {
         <p>©zakisu | 2022</p>
         <p>Addis Ababa, Ethiopia</p>
         <p>
-          <a href={comPose} target="_blank" rel="noreferrer">
+          <a
+            href={`mailto:zakisudev@gmail.com?subject=resume-review&body=Hey Zaki`}
+            target="_blank"
+            rel="noreferrer"
+          >
             zakisudev@gmail.com
           </a>
         </p>
