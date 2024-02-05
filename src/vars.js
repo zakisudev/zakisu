@@ -13,24 +13,26 @@ export const IntroPython =
 
 export const proPic =
   'https://res.cloudinary.com/dm0frybrb/image/upload/v1694599691/photo_2023-09-13_13-07-36_zssb3y.jpg';
-export const todoUrl = 'https://js-course-tutorials.vercel.app/';
-export const quranUrl = 'https://zakisu.tech/';
-export const hahuUrl = 'https://hahu-web-hosting.vercel.app/';
-export const wrUrl = 'https://zakisu250.github.io/writings.dev/';
-export const vanUrl = 'https://van-life-pink.vercel.app/';
-export const filwuha = 'https://filwuha-ms.vercel.app/';
-export const jobs = 'https://jobs.zakisu.tech/';
-export const snakeUrl = 'https://splendid-caramel-c2530a.netlify.app/';
+export const todoUrl = 'https://js-course-tutorials.vercel.app';
+export const quranUrl = 'https://zakisu.tech';
+export const hahuUrl = 'https://hahu-web-hosting.vercel.app';
+export const wrUrl = 'https://zakisu250.github.io/writings.dev';
+export const vanUrl = 'https://van-life-pink.vercel.app';
+export const filwuha = 'https://filwuha-ms.vercel.app';
+export const jobs = 'https://jobs.zakisu.tech';
+export const snakeUrl = 'https://splendid-caramel-c2530a.netlify.app';
+export const realUrl = 'https://real-estate-num1.onrender.com';
+export const eComUrl = 'https://mey-shop.onrender.com';
+export const disUrl = 'https://github.com/zakisudev/Discord-Clone';
+export const digUrl = 'https://github.com/zakisudev/Resume-MERN';
 
 export const ytLink =
   'https://www.youtube.com/channel/UCPR3tI0avH_3oNMaJNb88Mw';
 export const gitLink = 'https://www.github.com/zakisudev';
-export const lnkdLink = 'https://linkedin.com/in/zakisudev/';
+export const lnkdLink = 'https://linkedin.com/in/zakisudev';
 export const tweetLink = 'https://www.twitter.com/zakisu';
 export const resumeLink =
   'https://drive.google.com/file/d/1iQJYmRBTtXYpdT7dYvEbhd5iUaSHy9do/view?usp=sharing';
-
-export const comPose = 'https://mail.google.com/mail/u/0/#inbox?compose=new';
 
 export const todoSource =
   'https://github.com/zakisu250/JS-course-Tutorials/tree/eb65014e87a6f4c972897c72675277cb8831a44d/Todo';

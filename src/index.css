@@ -23,12 +23,12 @@ body {
 }
 
 #section-page {
-  margin-top: 40px;
+  margin-top: 10px;
   margin-bottom: 10px;
-  border-top: 1px solid var(--mainBorderColor);
+  border-bottom: 1px solid var(--mainBorderColor);
 }
 .projects {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 footer {
   display: flex;
@@ -60,7 +60,7 @@ a:hover {
 }
 
 .my-pic {
-  width: 200px;
+  width: 175px;
   aspect-ratio: 1/1;
   background-size: contain;
   border-radius: 50%;
@@ -76,9 +76,13 @@ a:hover {
   justify-content: space-evenly;
   align-items: center;
   gap: 3rem;
-  margin-top: 1rem;
-  margin-bottom: -1.5rem;
   font-size: 1.5rem;
+}
+
+.section-summary {
+  margin-top: 2rem;
+  line-height: 1.7;
+  text-align: center;
 }
 .desc-exp {
   padding-left: 20px;
@@ -91,33 +95,35 @@ a:hover {
 
 .projects li {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   margin: 0.5rem 0;
   color: var(--mainTextColor-light);
   border-bottom: 1px solid var(--mainBorderColor);
 }
+.proj {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  width: 50%;
+}
+.proj a {
+  width: fit-content;
+}
 
+.pro p {
+  font-size: 0.7rem;
+  line-height: 1.5;
+}
 li h4 {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .cert-images {
-  display: flex;
   justify-content: left;
   gap: 0.5rem;
   flex-wrap: wrap;
   align-items: flex-start;
 }
-.cert-images img {
-  width: 100px;
-  height: 70px;
-}
-.hide {
-  display: none;
-}
-.viewBtn {
-  cursor: pointer;
-  color: aqua;
-}
+
 #mode {
   display: flex;
   flex-direction: column;
